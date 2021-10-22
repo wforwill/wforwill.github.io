@@ -16,7 +16,7 @@ img {
 
 #intro {
     color: white;
-    background-image: url(wforwill.github.io/assignment2_draft/intro_bg.png);
+    background-image: url(https://wforwill.github.io/assignment2_draft/intro_bg.png);
     background-size: 135%;
     background-attachment: fixed;
     background-position: 50% 60%;
@@ -39,7 +39,7 @@ img {
 #section1 {
     margin-top: -32px;
     color: white;
-    background-image: url(wforwill.github.io/assignment2_draft/section1_bg.png);
+    background-image: url(https://wforwill.github.io/assignment2_draft/section1_bg.png);
     background-size: 135%;
     background-attachment: fixed;
     background-position: center;
@@ -73,7 +73,7 @@ img {
 #section2 {
     margin-top: -32px;
     color: white;
-    background-image: url(wforwill.github.io/assignment2_draft/section1_bg.png);
+    background-image: url(https://wforwill.github.io/assignment2_draft/section1_bg.png);
     filter: contrast(200%);
     background-size: 135%;
     background-attachment: fixed;
