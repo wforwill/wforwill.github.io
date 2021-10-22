@@ -1,51 +1,53 @@
-body {
-    font-family: 'Noto Sans TC', sans-serif, 'Noto Serif TC', serif;
-}
 * {
-
+    font-family: 'Noto Sans TC', sans-serif, 'Noto Serif TC', serif;
+    margin: 0px;
     padding: 0px;
+    position: relative;
 }
+
 .container-fluid {
     width: 500px
 }
+
 img {
     width: 500px;
     box-shadow: 0px 0px 15px 1px #555;
 }
+
 #intro {
-    color:white;
-    background-image: url(https://assets.thestandnews.com/media/resized/1650x0/photos/213304538_10225413250942820_1816994039630113711_n.png);
+    color: white;
+    background-image: url(intro_bg.png);
     background-size: 135%;
     background-attachment: fixed;
     background-position: 50% 60%;
     background-repeat: no-repeat;
     height: 105vh;
-    /* means viewpoint height */
     text-shadow: 0px 0px 5px #111;
     padding-top: 230px;
 }
-.heading {
+
+#heading {
     font-family: 'Noto Serif TC', serif;
     font-weight: 600;
     font-size: 40px;
 }
+
 .photo_src1 {
     padding-top: 250px;
 }
+
 #section1 {
     margin-top: -32px;
-    color:white;
-    background-image: url(https://assets.thestandnews.com/media/resized/1650x0/photos/87643652735476238544078.png);
+    color: white;
+    background-image: url(section1_bg.png);
     background-size: 135%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-position: 50% 8%; */
-    /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. */
     height: 105vh;
-    /* means viewpoint height */
     padding-top: 140px;
 }
+
 .author {
     width: 300px;
     font-size: 16px;
@@ -56,10 +58,10 @@ img {
     padding: 15px 15px 15px 15px;
     box-shadow: 0px 0px 15px 1px #555;
 }
-.des1 {
+
+#des1 {
     font-family: 'Noto Serif TC', sans-serif;
     width: 500px;
-    font-size: 16px;
     text-align: justify;
     margin-top: 20px;
     background-color: white;
@@ -67,31 +69,30 @@ img {
     padding: 15px 15px 15px 15px;
     box-shadow: 0px 0px 15px 1px #555;
 }
+
 #section2 {
     margin-top: -32px;
-    color:white;
-    background-image: url(https://assets.thestandnews.com/media/resized/1650x0/photos/87643652735476238544078.png);
+    color: white;
+    background-image: url(section1_bg.png);
     filter: contrast(200%);
     background-size: 135%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-position: 50% 8%; */
-    /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. */
     height: 105vh;
-    /* means viewpoint height */
     padding-top: 250px;
 }
-.des2 {
+
+#des2 {
     font-family: 'Noto Serif TC', sans-serif;
     width: 500px;
-    font-size: 16px;
     text-align: justify;
     background-color: white;
     color: #111;
     padding: 15px 15px 15px 15px;
     box-shadow: 0px 0px 15px 1px #555;
 }
+
 .popup1 {
     position: absolute;
     top: 110px;
@@ -100,6 +101,7 @@ img {
     width: 200px;
     filter: grayscale(100%)
 }
+
 .popup2 {
     position: absolute;
     top: 90px;
@@ -108,6 +110,7 @@ img {
     width: 200px;
     filter: grayscale(100%)
 }
+
 .popup3 {
     position: absolute;
     bottom: 190px;
@@ -116,6 +119,7 @@ img {
     width: 200px;
     filter: grayscale(100%)
 }
+
 .popup4 {
     position: absolute;
     bottom: 240px;
@@ -124,54 +128,53 @@ img {
     width: 200px;
     filter: grayscale(100%);
 }
-#section2:hover .popup1{
+
+#section2:hover .popup1 {
     opacity: 0.8;
     transition-duration: 1.5s;
 }
-#section2:hover .popup2{
+
+#section2:hover .popup2 {
     opacity: 0.8;
     transition-duration: 3s;
 }
-#section2:hover .popup3{
+
+#section2:hover .popup3 {
     opacity: 0.8;
     transition-duration: 4.5s;
 }
-#section2:hover .popup4{
+
+#section2:hover .popup4 {
     opacity: 0.8;
     transition-duration: 6s;
 }
+
 .photo_src2 {
     margin-top: 250px;
     padding-top: 20px;
     text-shadow: 0px 0px 5px #111;
 }
+
 #section3 {
-    margin-top: -32px;
-    color:white;
-    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' id='svg' viewBox='0 0 1440 700' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23abb8c344'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%2311111144'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0,700 C 0,700 0,140 0,140 C 56.39556048834629,139.5312862251819 112.79112097669258,139.0625724503638 170,127 C 227.20887902330742,114.93742754963621 285.231076581576,91.28099642372672 340,95 C 394.768923418424,98.71900357627328 446.28457269700334,129.81344185472932 497,151 C 547.7154273029967,172.18655814527068 597.6306326304107,183.46523615735603 647,189 C 696.3693673695893,194.53476384264397 745.1928967813541,194.32561351584658 801,188 C 856.8071032186459,181.67438648415342 919.5977802441732,169.2323097792576 972,146 C 1024.4022197558268,122.76769022074238 1066.4159822419533,88.74514736712294 1122,102 C 1177.5840177580467,115.25485263287706 1246.7382907880133,175.78710075225058 1302,190 C 1357.2617092119867,204.21289924774942 1398.6308546059934,172.1064496238747 1440,140 C 1440,140 1440,700 1440,700 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' class='transition-all duration-300 ease-in-out delay-150 path-0' transform='rotate(-180 720 350)'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23abb8c366'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%2311111166'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0,700 C 0,700 0,280 0,280 C 45.67719817486743,255.12512023677397 91.35439634973486,230.2502404735479 141,235 C 190.64560365026514,239.7497595264521 244.25961277592796,274.1241583425823 304,296 C 363.74038722407204,317.8758416574177 429.60715254655315,327.2531261561228 484,312 C 538.3928474534468,296.7468738438772 581.3117770378592,256.8633370329264 634,260 C 686.6882229621408,263.1366629670736 749.14573930201,309.2935257121717 804,309 C 858.85426069799,308.7064742878283 906.1052657541004,261.96256011838693 951,262 C 995.8947342458996,262.03743988161307 1038.4331976815884,308.8562338142805 1095,317 C 1151.5668023184116,325.1437661857195 1222.1619435195462,294.6125046244913 1282,282 C 1341.8380564804538,269.3874953755087 1390.919028240227,274.69374768775435 1440,280 C 1440,280 1440,700 1440,700 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' class='transition-all duration-300 ease-in-out delay-150 path-1' transform='rotate(-180 720 350)'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23abb8c388'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%2311111188'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0,700 C 0,700 0,420 0,420 C 59.9318288321618,415.04772475027744 119.8636576643236,410.09544950055493 174,415 C 228.1363423356764,419.90455049944507 276.4771981748674,434.66592674805764 329,443 C 381.5228018251326,451.33407325194236 438.22754963620673,453.2408435072142 497,452 C 555.7724503637933,450.7591564927858 616.6126032803058,446.3706992230855 660,426 C 703.3873967196942,405.6293007769145 729.32203724257,369.2763596004439 774,377 C 818.67796275743,384.7236403995561 882.0992477494144,436.5238623751387 938,460 C 993.9007522505856,483.4761376248613 1042.2809717597731,478.6281908990011 1099,469 C 1155.7190282402269,459.3718091009989 1220.7768652114935,444.96337402885683 1279,436 C 1337.2231347885065,427.03662597114317 1388.6115673942531,423.5183129855716 1440,420 C 1440,420 1440,700 1440,700 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' class='transition-all duration-300 ease-in-out delay-150 path-2' transform='rotate(-180 720 350)'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23abb8c3ff'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%23111111ff'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0,700 C 0,700 0,560 0,560 C 55.4854112714268,567.439585645579 110.9708225428536,574.879171291158 158,580 C 205.0291774571464,585.120828708842 243.60212110001237,587.9229004809471 295,578 C 346.39787889998763,568.0770995190529 410.620693057097,545.4292267850536 465,541 C 519.379306942903,536.5707732149464 563.9151066715995,550.3601923788383 621,541 C 678.0848933284005,531.6398076211617 747.7188802565053,499.1300036995931 811,511 C 874.2811197434947,522.8699963004069 931.20937230238,579.1197928227895 973,589 C 1014.79062769762,598.8802071772105 1041.4436305339746,562.390825009249 1093,554 C 1144.5563694660254,545.609174990751 1221.0161055617214,565.3169071402145 1283,571 C 1344.9838944382786,576.6830928597855 1392.4919472191393,568.3415464298928 1440,560 C 1440,560 1440,700 1440,700 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' class='transition-all duration-300 ease-in-out delay-150 path-3' transform='rotate(-180 720 350)'%3E%3C/path%3E%3C/svg%3E");    background-size: 115%;
-    /* background-color: #111; */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-position: 50% 8%; */
-    /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. */
-    height: 110vh;
-    /* means viewpoint height */
-    padding-top: 80px;
+    color: white;
+    height: 111vh;
 }
+
 .graph1, .graph2 {
-    margin-top: 90px;
+    margin-top: 140px;
     margin-left: 10px;
     height: 30vh;
     width: inherit;
     align-items: center;
+    opacity: 0;
 }
+
 .graph1 {
     margin-left: 30px;
 }
-.des3 {
+
+#des3 {
     width: 500px;
-    font-size: 15px;
     text-align: justify;
     margin-top: 20px;
     background-color: white;
@@ -179,66 +182,126 @@ img {
     padding: 15px 15px 15px 15px;
     box-shadow: 0px 0px 15px 1px #555;
 }
-.photo_src3 {
-    margin-top: 100px;
-    color: #111;
+
+#section3:hover .graph1 {
+    opacity: 1;
+    transition-duration: 1s;
 }
+
+#section3:hover .graph2 {
+    opacity: 1;
+    transition-duration: 2s;
+}
+
+.fullscreen-bg__video {
+    width: 100vw;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    margin-top: -84vh;
+}
+
 #section4 {
-    margin-top: -32px;
-    /* filter: grayscale(100%); */
-    color:white;
-    background-color: rgb(246, 246, 246);
+    margin-top: -70px;
+    color: white;
+    background-color: grey;
     background-size: 120%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-position: 50% 8%; */
-    /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. */
-    height: 105vh;
-    /* means viewpoint height */
-    padding-top: 150px;
+    height: 110vh;
+    padding-top: 100px;
 }
-.des4 {
+
+#des4 {
     width: 500px;
-    font-size: 15px;
     text-align: justify;
     margin-top: 20px;
-    /* background-color: white; */
     color: #111;
     padding: 15px 15px 15px 15px;
-    /* box-shadow: 0px 0px 15px 1px #555; */
 }
+
 .photo_src4 {
     margin-top: 20px;
     padding-top: 20px;
     color: #111;
 }
+
 #section5 {
-    margin-top: -32px;
-    color:white;
+    margin-top: -64px;
+    color: white;
     background-color: rgb(246, 246, 246);
     background-size: 120%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-position: 50% 8%; */
-    /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. */
-    height: 105vh;
-    /* means viewpoint height */
-    padding-top: 150px;
+    height: 110vh;
+    padding-top: 100px;
 }
-.des5 {
+
+#des5 {
     width: 500px;
-    font-size: 15px;
     text-align: justify;
     margin-top: 20px;
-    /* background-color: white; */
     color: #111;
     padding: 15px 15px 15px 15px;
-    /* box-shadow: 0px 0px 15px 1px #555; */
 }
+
 .photo_src5 {
     margin-top: 20px;
     padding-top: 20px;
     color: #111;
+}
+
+#section6 {
+    margin-top: -64px;
+    color: white;
+    background-color: grey;
+    background-size: 120%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#des6 {
+    width: 500px;
+    text-align: justify;
+    margin-top: 20px;
+    color: #111;
+    padding: 15px 15px 15px 15px;
+}
+
+.photo_src6 {
+    margin-top: 20px;
+    padding-top: 20px;
+    color: #111;
+}
+
+#section7 {
+    color: white;
+    background-color: rgb(246, 246, 246);
+    background-size: 120%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 105vh;
+    padding-top: 100px;
+    padding-bottom: -100px;
+}
+
+#des7 {
+    width: 500px;
+    text-align: justify;
+    margin-top: 20px;
+    color: #111;
+    padding: 15px 15px 15px 15px;
+}
+
+.photo_src7 {
+    margin-top: 20px;
+    padding-top: 20px;
+    color: #111;
+    padding-bottom: 90px;
 }
