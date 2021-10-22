@@ -23,7 +23,7 @@ img {
     background-repeat: no-repeat;
     height: 105vh;
     text-shadow: 0px 0px 5px #111;
-    padding-top: 230px;
+    padding-top: 260px;
 }
 
 #heading {
@@ -79,8 +79,8 @@ img {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 105vh;
-    padding-top: 250px;
+    height: 100vh;
+    padding-top: 220px;
 }
 
 #des2 {
