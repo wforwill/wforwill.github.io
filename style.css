@@ -1,17 +1,5 @@
-* {
-    font-family: 'Noto Sans TC', sans-serif, 'Noto Serif TC', serif;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-}
-
 .container-fluid {
     width: 500px;
-}
-
-img {
-    width: 500px;
-    box-shadow: 0px 0px 15px 1px #555;
 }
 
 #intro {
@@ -38,7 +26,6 @@ img {
 
 #section1 {
     margin-top: -32px;
-    color: white;
     background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1634891350/section1_bg_pncjoo.png);
     background-size: 135%;
     background-attachment: fixed;
@@ -59,7 +46,7 @@ img {
     box-shadow: 0px 0px 15px 1px #555;
 }
 
-#des1 {
+#des1, #des2 {
     font-family: 'Noto Serif TC', sans-serif;
     text-align: justify;
     margin-top: 20px;
@@ -71,7 +58,6 @@ img {
 
 #section2 {
     margin-top: -32px;
-    color: white;
     background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1634891350/section1_bg_pncjoo.png);
     filter: contrast(200%);
     background-size: 135%;
@@ -82,49 +68,32 @@ img {
     padding-top: 220px;
 }
 
-#des2 {
-    font-family: 'Noto Serif TC', sans-serif;
-    text-align: justify;
-    background-color: white;
-    color: #111;
-    padding: 15px 15px 15px 15px;
+.popup1, .popup2, .popup3, .popup4 {
+    width: 200px;
     box-shadow: 0px 0px 15px 1px #555;
+    opacity: 0;
+    filter: grayscale(100%);
+    position: absolute;
 }
 
 .popup1 {
-    position: absolute;
     top: 110px;
     left: 190px;
-    opacity: 0;
-    width: 200px;
-    filter: grayscale(100%)
 }
 
 .popup2 {
-    position: absolute;
     top: 90px;
     left: 380px;
-    opacity: 0;
-    width: 200px;
-    filter: grayscale(100%)
 }
 
 .popup3 {
-    position: absolute;
-    bottom: 190px;
+    bottom: 175px;
     right: 350px;
-    opacity: 0;
-    width: 200px;
-    filter: grayscale(100%)
 }
 
 .popup4 {
-    position: absolute;
-    bottom: 240px;
+    bottom: 225px;
     right: 160px;
-    opacity: 0;
-    width: 200px;
-    filter: grayscale(100%);
 }
 
 #section2:hover .popup1 {
@@ -147,28 +116,24 @@ img {
     transition-duration: 6s;
 }
 
-.photo_src2 {
+#photo_src2 {
+    color: white;
     margin-top: 250px;
     padding-top: 20px;
     text-shadow: 0px 0px 5px #111;
 }
 
 #section3 {
-    color: white;
     height: 112vh;
 }
 
-.graph1, .graph2 {
+#graph1, #graph2 {
     margin-top: 140px;
     margin-left: 10px;
     height: 30vh;
-    width: inherit;
     align-items: center;
     opacity: 0;
-}
-
-.graph1 {
-    margin-left: 30px;
+    box-shadow: 0px 0px 15px 1px #555;
 }
 
 #des3 {
@@ -180,17 +145,17 @@ img {
     box-shadow: 0px 0px 15px 1px #555;
 }
 
-#section3:hover .graph1 {
+#section3:hover #graph1 {
     opacity: 1;
     transition-duration: 1s;
 }
 
-#section3:hover .graph2 {
+#section3:hover #graph2 {
     opacity: 1;
     transition-duration: 2s;
 }
 
-.fullscreen-bg__video {
+#fullscreen-bg__video {
     width: 100vw;
     display: block;
     z-index: -1;
@@ -200,120 +165,85 @@ img {
 
 #section4 {
     margin-top: -78px;
-    color: white;
     background-color: rgb(246, 246, 246);
     background-size: 120%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 93vh;
+    height: 180vh;
     padding-top: 70px;
 }
 
-#subhead1 {
+#subhead1, #subhead2 {
     color: #111;
     font-size: 24px;
     text-align: left;
 }
 
-#quote1 {
+#quote1, #quote2 {
     text-align: justify;
-    color:saddlebrown;
+    color: #999;
     padding: 15px 0px 0px 0px;
-}
-
-#des4 {
-    text-align: justify;
-    color: #111;
-    padding: 15px 15px 15px 15px;
-}
-
-#section5 {
-    color: white;
-    background-color: rgb(246, 246, 246);
-    background-size: 120%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 83vh;
-    padding-top: 10px;
-}
-
-.ken {
-
-    box-shadow: none;
-}
-
-#des5 {
-    text-align: justify;
-    margin-top: 20px;
-    color: #111;
-    padding: 15px 15px 15px 15px;
-}
-
-#section6 {
-    color: white;
-    height: 70vh;
-}
-
-#section7 {
-    margin-top: -78px;
-    color: white;
-    background-color: rgb(246, 246, 246);
-    background-size: 120%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 87vh;
-    padding-top: 70px;
-}
-
-#subhead2 {
-    color: #111;
     font-size: 24px;
-    text-align: left;
+    font-weight: 300;
 }
 
-#quote2 {
-    text-align: justify;
-    color:saddlebrown;
-    padding: 15px 0px 0px 0px;
-}
-
-#des7 {
+#des4, #des6 {
     text-align: justify;
     color: #111;
     padding: 15px 15px 0px 15px;
 }
 
-#section8 {
-    color: white;
+#ken, #joanne {
+    padding: 20px 0px 5px 0px;
+    margin-left: -15px;
+    width: 500px;
+}
+
+#section5 {
+    height: 75vh;
+    background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635079030/york2_ebbaom.jpg);
+    filter: grayscale(40%);
+    background-size: 135%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section6 {
+    padding-top: 145px;
     background-color: rgb(246, 246, 246);
     background-size: 120%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 83vh;
-    padding-top: 20px;
+    height: 144vh;
+    padding-top: 70px;
 }
 
-.jo {
-    box-shadow: none;
+#section7 {
+    height: 75vh;
+    background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635084165/can_kmxbim.jpg);
+    filter: grayscale(70%);
+    background-size: 135%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
 }
 
-#des8 {
+#des7 { 
     text-align: justify;
-    margin-top: 20px;
-    color: #111;
-    padding: 15px 15px 15px 15px;
-}
-
-#section9 {
     color: white;
-    height: 60vh;
+    text-shadow: 0px 2px 5px #111;
+    font-weight: 300;
+    font-family: 'Noto Serif TC', sans-serif;
+    font-size: 20px;
+    opacity: 0;
 }
 
-.photo_src9 {
-    padding-top: 340px;
-    color: #111;
+#section7:hover #des7 {
+    opacity: 0.9;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
 }
