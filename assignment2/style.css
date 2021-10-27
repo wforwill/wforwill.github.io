@@ -16,7 +16,7 @@ body, html {
     background-position: 50% 61%;
     background-repeat: no-repeat;
     color: white;
-    text-shadow: 0vh 0vh 1.5vh #111;
+    text-shadow: 0vh 0vh 2vh #111;
 }
 
 #heading {
@@ -88,19 +88,19 @@ body, html {
 }
 
 #section2:hover #popup1 {
-    opacity: 0.8;
+    opacity: 0.9;
     transition-duration: 1.5s;
 }
 #section2:hover #popup2 {
-    opacity: 0.8;
+    opacity: 0.9;
     transition-duration: 3s;
 }
 #section2:hover #popup3 {
-    opacity: 0.8;
+    opacity: 0.9;
     transition-duration: 4.5s;
 }
 #section2:hover #popup4 {
-    opacity: 0.8;
+    opacity: 0.9;
     transition-duration: 6s;
 }
 
