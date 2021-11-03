@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -11,6 +12,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
+    <script>
+        $(document).ready(function() {
+            var max_scroll = $(document).height() - $(window).height();
+            var max_w = $("#horizontal").width() - $(window).width();
+            var h_pos = $("#horizontal").offset().top;
+            var hframe_h = $("#section5").height();
+            // name the variables
+            $(window).scroll(function() {
+                var current_pos = $(window).scrollTop();
+                // name the variable
+                if (current_pos > h_pos && current_pos < hframe_h) {
+                // instruct the following only within this area
+                    var new_left = (-1 * max_w * (current_pos-h_pos)) / hframe_h;
+                    // name the variable: mind the negative sign 
+                    $("#horizontal").css({
+                        left: new_left
+                    // and change the left property of #horizontal into the value of var new_left
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function(){
+            var video1_pos = $("#video1").offset().top;
+            var video1_end = video1_pos + $("#v1frame").height() - $(window).height();
+            $(window).scroll(function(){
+                var current_pos = $(window).scrollTop();
+                if(current_pos > video1_pos && current_pos < video1_end){
+                    $("#video1")[0].play();
+                }else{
+                    $("#video1")[0].pause();
+                }
+            });
+        });
+    </script>
+
     <title>有障礙的無障礙設施：以台北中正區為例</title>
     
     <style>
@@ -18,7 +57,6 @@
         position: relative;
     }
     body, html {
-        
         margin: 0px;
         padding: 0px;
         font-family: 'Noto Sans TC', sans-serif ,'Noto Serif TC', serif;
@@ -66,119 +104,51 @@
         </p>
     </div>
 
-    <div id="section2" style="height: 100vh;">
-        <div class="container-fluid text-center" style="
-            height:50vh;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606432/DSC06864-min_ea2aqq.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: grayscale(30%);">
-            <div class="container-fluid sticky-top" style="
-                width: 100%; 
-                height: 50px; 
-                text-shadow: 0vh 0vh 0.5vh black; 
-                color: white; 
-                font-size: 4vh;
-                font-weight: 600;
-                padding: 3vh 3vh 3vh 3vh;">
-            <p>水源市場：正門只有樓梯</p> 
+    <div id="section2" class="container-fluid text-center" style="
+    height: 100vh;
+    background-color: #222;
+    font-size: 2.5vh;">
+        <div class="row" style="height:100vh; top: 8vh; color: white">
+            <div class="col-4" style="left: 3vw;">
+                <p>水源市場：<br>正門只有樓梯<br></p>
+                <img src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606432/DSC06864-min_ea2aqq.jpg" style="width: 25vw; margin-bottom: 3vh; border-radius: 0.5vh;">
+                <p>後門輪椅入口被機車擋住</p>
+                <img src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606430/DSC06865-min_syouit.jpg" style="width: 25vw; border-radius: 0.5vh;">
             </div>
-        </div>
-        <div class="container-fluid text-center" style="
-            height:50vh;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606430/DSC06865-min_syouit.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: grayscale(30%);">
-            <div class="container-fluid sticky-top" style="
-                width: 100%; 
-                height: 50px; 
-                text-shadow: 0vh 0vh 0.5vh black; 
-                color: white; 
-                font-size: 4vh;
-                font-weight: 600;
-                padding: 3vh 3vh 3vh 3vh;">
-            <p>後門輪椅入口被機車擋住</p> 
+            <div class="col-4">
+                <p>羅斯福路四段往臺大正門隧道：<br>沒有電梯<br></p>
+                <img src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606429/DSC06821-min_bofwrm.jpg" style="width: 25vw; margin-bottom: 3vh; border-radius: 0.5vh;">
+                <p>大多數梯級沒有導盲磚</p>
+                <img src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606429/DSC06832-min_ggvozu.jpg" style="width: 25vw; border-radius: 0.5vh;">
+            </div>
+            <div class="col-4" style="right: 3vw">
+                <p>捷運公館站：<br>斷開的導盲磚<br></p>
+                <img src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606430/DSC06860-min_dsyurf.jpg" style="width: 25vw; margin-bottom: 3vh; border-radius: 0.5vh;">
+                <p>無法連結至電梯<br></p>
+                <img src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606429/DSC06861-min_glfocd.jpg" style="width: 25vw; border-radius: 0.5vh;">
+            </div>
         </div>
     </div>
 
-    <div id="section3" style="height: 100vh;">
-        <div class="container-fluid text-center" style="
-            height:50vh;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606429/DSC06821-min_bofwrm.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: grayscale(30%);">
-            <div class="container-fluid sticky-top" style="
-                width: 100%; 
-                height: 50px; 
-                text-shadow: 0vh 0vh 0.5vh black; 
-                color: white; 
-                font-size: 4vh;
-                font-weight: 600;
-                padding: 3vh 3vh 3vh 3vh;">
-            <p>羅斯福路四段往臺大正門隧道：沒有電梯</p> 
-            </div>
+    <div id="v1frame" style="height: 180vh;">
+        <div class="sticky-top" style="z-index: -1">
+            <video id="video1" src="https://res.cloudinary.com/dcibk3fp2/video/upload/v1635953276/IMG_5362_jn2etk.mp4" style="width=100vw; position: absolute;"></video>
         </div>
-        <div class="container-fluid text-center" style="
-            height:50vh;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606429/DSC06832-min_ggvozu.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: grayscale(30%);">
-            <div class="container-fluid sticky-top" style="
-                width: 100%; 
-                height: 50px; 
-                text-shadow: 0vh 0vh 0.5vh black; 
-                color: white; 
-                font-size: 4vh;
-                font-weight: 600;
-                padding: 3vh 3vh 3vh 3vh;">
-            <p>大多數梯級沒有導盲磚</p> 
-        </div>
+        <p style="
+        position: relative;
+        top: 70vh;
+        margin: 0 auto;
+        width: 30.3vw;
+        background-color: white;
+        box-shadow: 0vh 0vh 0.8vh 0.2vh black;
+        border-radius: 0.5vh;
+        padding: 1vh 1vh 1vh 1vh;
+        color: #111; 
+        font-size: 3vh;
+        font-weight: 400;">沒有聲音的紅綠燈：<br>視障人士難以辨別此刻為綠燈、還是紅燈</p>
     </div>
-
-    <div id="section4" style="height: 100vh;">
-        <div class="container-fluid text-center" style="
-            height:50vh;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606430/DSC06860-min_dsyurf.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: grayscale(30%);">
-            <div class="container-fluid sticky-top" style="
-                width: 100%; 
-                height: 50px; 
-                text-shadow: 0vh 0vh 0.5vh black; 
-                color: white; 
-                font-size: 4vh;
-                font-weight: 600;
-                padding: 3vh 3vh 3vh 3vh;">
-            <p>捷運公館站：斷開的導盲磚</p> 
-            </div>
-        </div>
-        <div class="container-fluid text-center" style="
-            height:50vh;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635606430/DSC06863-min_jjkxr5.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: grayscale(30%);">
-        </div>
-    </div>
-
     
-    <div id="section5" class="container-fluid text-center" style="
+    <div id="section4" class="container-fluid text-center" style="
         height: 100vh;
         background-color: rgb(246, 246, 246);
         font-size: 2.5vh;">
@@ -191,17 +161,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);">
-            上述可見，儘管中正區人流繁多，我們還是可以見到各種對傷殘人士不友善的街道設計。
-            水源市場雖設有斜坡，可是只在後門，而且被大量機車堵塞，輪椅使用者無法使用。
-            羅斯福路四段往臺大正門隧道，是很多往來學校和公館商區的民眾，會選擇的一個過路途徑。可是輪椅人士無法使用，視障人士也因欠缺導盲磚設計，難以下樓梯。
-            至於捷運站，電梯能方便輪椅使用者進出，可是，視障人士卻須面對導盲磚突然斷開的難題。
-            <br><br>接下來，我們來看一段太子學舍住戶經常會使用的路線的一段，思源街12-6號。
+            上述可見，儘管中正區人流繁多，我們還是可以見到各種對傷殘人士不友善的街道設計：
+            <br><br><b>水源市場</b>雖設斜坡，可是只在後門，而且被大量機車堵塞，輪椅使用者無法使用。<b>羅斯福路四段往臺大正門隧道</b>，是很多往來學校和公館的民眾，會選擇的一個過路途徑。可是輪椅人士無法使用，視障人士也因欠缺導盲磚設計，難以下樓梯。<b>捷運站</b>的電梯方便輪椅使用者進出，不過卻有導盲磚突然斷開的難題。至於<b>紅綠燈</b>，甚至沒有考慮到視障人士的辨識需要。
+            <br><br>接下來，我們來看一段太子學舍住戶經常會使用的路線的一段，<b>思源街12-6號</b>。
         </p>
     </div>
 
-    <div id="section6" style="height: 5000vh; background-color: black;">
+    <div id="section5" style="height: 5000vh; background-color: black;">
         <div class="sticky-top">
-            <div id="wideobj" 
+            <div id="horizontal" 
             style="
             position:absolute;
             height:100vh;
@@ -214,27 +182,5 @@
         </div>
     </div>
     <!-- enable the js to link the outer div's height to #wideobj's width -->
-
-
-    <script>
-        $(function(){
-            var doch = $(document).height();
-            var winw = $(window).width();
-            var winh = $(window).height();
-            var max_move = $("#wideobj").width() - winw;
-            // name the variables
-            $(window).scroll(function(){
-            // when user scroll, then
-                var current_pos = $(window).scrollTop();
-                var new_left = -(current_pos-$(window).height()*5) / (doch-winh) * max_move;
-                // name the variables
-                // negative, since we need #wideobj to scroll from right to left
-                $("#wideobj").css("left", new_left);
-                // select #wideobj, change its style--left into the var new_width
-            });
-        });
-    </script>
-
-
 
 </body>
