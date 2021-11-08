@@ -20,44 +20,6 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- <script>
-        $(document).ready(function() {
-            var max_scroll = $(document).height() - $(window).height();
-            var max_w = $("#horizontal").width() - $(window).width();
-            var h_pos = $("#horizontal").offset().top;
-            var hframe_h = $("#section5").height();
-            // name the variables
-            $(window).scroll(function() {
-                var current_pos = $(window).scrollTop();
-                // name the variable
-                if (current_pos > h_pos && current_pos < hframe_h) {
-                // instruct the following only within this area
-                    var new_left = (-1 * max_w * (current_pos-h_pos)) / hframe_h;
-                    // name the variable: mind the negative sign 
-                    $("#horizontal").css({
-                        left: new_left
-                    // and change the left property of #horizontal into the value of var new_left
-                    });
-                }
-            });
-        });
-    </script> -->
-<!-- 
-    <script>
-        $(function () {
-            var video1_pos = $("#video1").offset().top;
-            var video1_end = video1_pos + $("#v1frame").height() - $(window).height();
-            $(window).scroll(function () {
-                var current_pos = $(window).scrollTop();
-                if (current_pos > video1_pos && current_pos < video1_end) {
-                    $("#video1")[0].play();
-                } else {
-                    $("#video1")[0].pause();
-                }
-            });
-        });
-    </script> -->
-
     <title>有障礙的無障礙設計：以臺北中正區為例</title>
 
     <style>
@@ -148,26 +110,27 @@
     </div>
 
     <div id="v1frame" style="height: 100vh;">
-        <video id="video1" loop="true" autoplay="autoplay" muted="true" src="https://res.cloudinary.com/dcibk3fp2/video/upload/v1635953276/IMG_5362_jn2etk.mp4"
-            style="
+        <video id="video1" loop="true" autoplay="autoplay" muted="true"
+            src="https://res.cloudinary.com/dcibk3fp2/video/upload/v1635953276/IMG_5362_jn2etk.mp4" style="
             display: block;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
-            width: 100vw;"></video>
+            width: 100vw;
+            object-fit: cover;"></video>
         <p style="
             position: relative;
-            top: 20vh;
+            top: 40vh;
             margin: 0 auto;
-            width: 32vw;
+            width: 11.5vw;
             background-color: white;
             box-shadow: 0vh 0vh 0.8vh 0.2vh black;
             border-radius: 0.5vh;
-            padding: 1vh 1vh 1vh 1vh;
+            padding: 0.5vh 0.5vh 0.5vh 0.5vh;
             color: #111; 
-            font-size: 3vh;
-            font-weight: 400;">沒有聲音的紅綠燈：<br>視障人士難以辨別此刻為綠燈、還是紅燈</p>
+            font-size: 2.5vh;
+            font-weight: 400;">沒有聲音的紅綠燈</p>
     </div>
 
     <div id="section4" class="container-fluid text-center" style="
@@ -188,20 +151,6 @@
             <br><br>接下來，我們來看一段太子學舍住戶經常會使用的路線的一段，<b>思源街12-6號</b>。
         </p>
     </div>
-
-    <!-- <div id="section5" style="height: 6500vh; background-color: black;">
-        <div class="sticky-top">
-            <div id="horizontal" 
-            style="
-            position:absolute;
-            height:100vh;
-            width:1000vw;
-            left:0px;
-            background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1635609996/bot_pedestrain_caption_aj2kh3.jpg);
-            background-size:cover;">
-            </div>
-        </div>
-    </div> -->
 
     <div id="9740ac0d-c089-400b-905f-e407bb656f27"></div>
     <script>
