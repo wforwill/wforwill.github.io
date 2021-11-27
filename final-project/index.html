@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var current_pos1 = $(window).scrollTop();
+                var new_width = current_pos1 / ($(document).height()-$(window).height()) * $(window).width();
+                // name the variables
+                $("#progressbar").css("width", new_width);
+                // select id progress bar, change its style--width into the var new_width
+            });
+        });
+
+        $(function () {
+            var max_scroll = $(document).height() - $(window).height()*4;
+            $(window).scroll(function (e) {
+                var video = $('#video').get(0),
+                    // mind the .get(0)
+                    videoLength = video.duration,
+                    current_pos2 = $(document).scrollTop() - $(window).height()*2;
+                video.currentTime = videoLength * (current_pos2 / max_scroll);
+            });
+        });
+    </script>
+
+    <style>
+    * {
+        position: relative;
+    }
+    </style>
+
+    <title>桃園煉油廠44年</title>
+
+</head>
+
+<body>
+    
+    <div id="intro" class="container-fluid text-center"
+        style="
+        height:100vh;
+        background-image: url(https://live.staticflickr.com/734/22615003839_976d7b888c_b.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 35%;
+        background-repeat: no-repeat;">
+        <p id="heading" style="
+            padding-top: 35vh;
+            text-shadow: 0vh 0vh 0.5vh black; 
+            color: white; 
+            font-family: Noto Serif TC;
+            font-size: 6vh;
+            font-weight: 600;">桃園煉油廠44年：<br>公害與兩難</p>
+    </div>
+
+    <div class="sticky-top" style="
+        height: 2vh;
+        background-color: rgb(246, 246, 246)">
+        <div id="progressbar" style="
+            height: 2vh;
+            width: 0px;
+            background-color: #111;
+            text-align: right;">
+        </div>
+    </div>
+
+    <div id="section1" class="container-fluid text-center" style="
+        height: 100vh;
+        background-color: rgb(246, 246, 246);
+        font-size: 2.5vh;">
+        <p id="des" style="
+            max-width: 60%;
+            font-family: 'Noto Serif TC', sans-serif;
+            text-align: justify;
+            color: #111;
+            padding: 3vh 3vh 3vh 3vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);">何汶、梁景鴻、秦李欣 / 2022年1月5日 / 發自臺北
+            <br><br>洪水橋是位於香港新界西北，元朗區的一個地方。地理上，它在三個最近的市郊，屯門、元朗市和天水圍，的中間位置。
+            千禧之前，洪水橋遍佈荒廢了的農地，這些農地後來變成貨櫃場、停車場等用途。香港政府在《2007至2008年度香港行政長官施政報告》中，落實洪水橋發展計劃。在荒地中安置香港人口。
+            <br><br>公共屋邨洪福邨，在2015年落成。此後，不同地產商和組織的住宅發展計劃進駐。但是，附近的社區，卻缺乏設施配套。
+            目前，洪福邨及附近的住宅，沒有可供社工定點服務的地方；也沒有足夠的康樂設施。儘管如此，政府還是不斷批核更多的住宅興建申請。
+            <br><br>本專題，將從洪福邨一帶的地貌變遷，講解洪水橋的發展如何急躁，政府的發展思維如何忽略全人需要。
+        </p>
+    </div>
+
+    <div id="section2">
+        <video id="video" class="sticky-top"
+            style="
+            z-index:-20;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover;
+            object-position: 50% 100%;" 
+            src="https://res.cloudinary.com/dcibk3fp2/video/upload/v1637143286/HSK-2008to2020_j9bxkm.mp4"></video>
+            <div style="z-index:20; height:700vh; top:40vh;">
+            <div style="height:10vh">
+                <p style="width: 25vw; left: 72vw; font-size: 4vh;"><span style="background-color: white;">桃煉的歷史脈絡</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2008年，現時洪福邨一帶仍是未開發的土地。附近也只有荒地和貨櫃。</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2011年，黃色框地帶，被更多貨櫃佔據。此為<a href="https://www.richitt.com/lyos/">丈量約份第124約地段第4328號</a>住宅發展項目「LYOS」，日後長實集團會興建供約1,000人居住的單位。</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2014年1月，洪福邨的地基已被建好。</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2014年10月，有人斬去附近的綠色框地帶的樹木，準備興建新的住宅項目。另外，根據城市規劃委員會的資料（<a href="https://www2.ozp.tpb.gov.hk/gist/apply/en_tc/A_HSK_253_TC.pdf">A/HSK/253</a>），兩個黃色框地帶，均是長實地產，和房屋協會的發展計劃，約供8,000人居住。</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2019年12月，仁愛堂開始為興建臨時過渡性房屋，斬掉白色框地帶的樹木。該項目<a href="https://www2.ozp.tpb.gov.hk/gist/apply/en_tc/A_HSK_323_TC.pdf">A/HSK/323</a>將供約400人居住。</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">洪福邨在2015年入伙後，有近12,000人口。附近一帶沒有供社工進駐的空間。洪福邨內有一青年空間、老年中心、幼稚園、小型街市（市場）。可是，這已經是附近僅有的設施了，而且附近住宅的居民，也會來到使用它們，以致供不應求。</span></p>
+            </div>
+            <div style="height:100vh">
+                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2020年11月，泛海集團開始在藍色框地帶動工，興建<a href="https://www2.ozp.tpb.gov.hk/gist/apply/en_tc/A_YL-PS_198_TC.pdf">A/YL-PS/198</a>住宅項目，將供大概2,200人居住。</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="container-fluid text-center" style="
+        height: 100vh;
+        background-color: rgb(246, 246, 246);
+        font-size: 2.5vh;">
+        <img src="https://online.visual-paradigm.com/servlet/editor-content/knowledge/timeline-diagram/what-is-timeline-diagram/sites/7/2019/08/timeline-example-history-of-ai.png" style="
+            max-width: 56%;
+            margin-top: 12vh;">
+        <p id="des" style="
+            max-width: 60%;
+            font-family: 'Noto Serif TC', sans-serif;
+            text-align: justify;
+            color: #111;
+            padding: 3vh 3vh 3vh 3vh;
+            margin-top: 15vh;
+            left: 50%;
+            transform: translate(-50%, -50%);">
+            由於房屋問題嚴峻，港府多年來不斷興建公共屋邨，來迴避更難解決的根本問題--如高地價政策。可是，這樣「斬腳趾避沙蟲」（治標不治本）的政策，只會製造更多社區矛盾。政府引洪福邨建築設計為傲的其中一點是，它有近八成的綠化帶。諷刺的是，因房屋署承包給洪福邨管理公司的合約中，園藝維護的金額極其有限。從下方各圖可見，不少植物長年缺乏妥善照料，有的甚至已經枯死。
+        </p>
+    </div>
+
+    <div id="section4" style="
+    height: 100vh;
+    background-color: #222;
+    font-size: 2.5vh;
+    background-image: url(http://5b0988e595225.cdn.sohucs.com/images/20180703/9fe2135faba545bcbf9a65b88379ad89.jpeg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;">
+    </div>
+
+    <div id="section5" style="
+    height: 100vh;
+    background-color: #222;
+    font-size: 2.5vh;
+    background-image: url(http://5b0988e595225.cdn.sohucs.com/images/20180703/4dfa4a40125340cdb128982d38eeb25c.jpeg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;">
+    </div>
+
+    <div id="section6" class="container-fluid text-center" style="
+    height: 100vh;
+    background-color: rgb(246, 246, 246);
+    font-size: 2.5vh;">
+    <p id="des" style="
+        max-width: 60%;
+        font-family: 'Noto Serif TC', sans-serif;
+        text-align: justify;
+        color: #111;
+        padding: 3vh 3vh 3vh 3vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);">
+        其實，洪水橋社區的問題不止於此。舉例來說，附近只有兩所中學（國中），一間幼稚園，而沒有小學（國小）。
+        如果學生不能選上，或者不想選這幾所學校，那只能每天花一小時通勤，遠赴天水圍，或者屯門就學。另外，洪水橋距離最近的地鐵天水圍站有二十分鐘的時程；由於香港的交通重度依賴地鐵線路，很多居民每天上下班需轉車再通勤。
+        <br><br>如此般，在一個將有近24,000人口的地方，在政府的急躁規劃下只提供最低程度的社區設施，居民的生活需要被嚴重壓榨。
+        <br><br>（本文封面圖由Ka Ho拍攝，屋邨景觀圖由何宇霆拍攝；影片由梁景鴻從Google Earth翻攝。）
+    </p>
+    </div>
+
+</body>
+
+</html>
