@@ -3,11 +3,9 @@
 
 <head>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 
     <script>
@@ -22,21 +20,34 @@
         });
 
         $(function () {
-            var max_scroll = $(document).height() - $(window).height()*4;
+            var max_scroll = $('#section2').height();
             $(window).scroll(function (e) {
-                var video = $('#video').get(0),
+                var video1 = $('#video1').get(0),
                     // mind the .get(0)
-                    videoLength = video.duration,
+                    video1Length = video1.duration,
                     current_pos2 = $(document).scrollTop() - $(window).height()*2;
-                video.currentTime = videoLength * (current_pos2 / max_scroll);
+                video1.currentTime = video1Length * (current_pos2 / max_scroll);
+            });
+        });
+
+        $(function(){
+            var video2_pos = $('#section7').offset().top;
+            var video2_end = $('#section7').offset().top + $('#section7').height();
+            $(window).scroll(function(){
+                var current_pos3 = $(window).scrollTop();
+                if(current_pos3 > video2_pos && current_pos3 < video2_end){
+                    $("#video2")[0].play();
+                }else{
+                    $("#video2")[0].pause();
+                }
             });
         });
     </script>
 
     <style>
-    * {
-        position: relative;
-    }
+        * {
+            position: relative;
+        }
     </style>
 
     <title>桃園煉油廠44年</title>
@@ -48,9 +59,8 @@
     <div id="intro" class="container-fluid text-center"
         style="
         height:100vh;
-        background-image: url(https://live.staticflickr.com/734/22615003839_976d7b888c_b.jpg);
+        background-image: url(https://live.staticflickr.com/5769/22588889918_bbf256ffcc_k_d.jpg);
         background-size: cover;
-        background-attachment: fixed;
         background-position: 50% 35%;
         background-repeat: no-repeat;">
         <p id="heading" style="
@@ -95,7 +105,7 @@
     </div>
 
     <div id="section2">
-        <video id="video" class="sticky-top"
+        <video id="video1" class="sticky-top"
             style="
             z-index:-20;
             width: 100vw; 
@@ -194,7 +204,7 @@
     </div>
 
     <div id="section7">
-        <video id="video" class="sticky-top"
+        <video id="video2" class="sticky-top"
             style="
             z-index:-20;
             width: 100vw; 
@@ -202,30 +212,12 @@
             object-fit: cover;
             object-position: 50% 100%;" 
             src="https://res.cloudinary.com/dcibk3fp2/video/upload/v1637143286/HSK-2008to2020_j9bxkm.mp4"></video>
-            <div style="z-index:20; height:700vh; top:40vh;">
+        <div style="z-index:20; height:110vh; top:40vh;">
             <div style="height:10vh">
                 <p style="width: 25vw; left: 72vw; font-size: 4vh;"><span style="background-color: white;">桃煉的歷史脈絡</span></p>
             </div>
             <div style="height:100vh">
                 <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2008年，現時洪福邨一帶仍是未開發的土地。附近也只有荒地和貨櫃。</span></p>
-            </div>
-            <div style="height:100vh">
-                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2011年，黃色框地帶，被更多貨櫃佔據。此為<a href="https://www.richitt.com/lyos/">丈量約份第124約地段第4328號</a>住宅發展項目「LYOS」，日後長實集團會興建供約1,000人居住的單位。</span></p>
-            </div>
-            <div style="height:100vh">
-                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2014年1月，洪福邨的地基已被建好。</span></p>
-            </div>
-            <div style="height:100vh">
-                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2014年10月，有人斬去附近的綠色框地帶的樹木，準備興建新的住宅項目。另外，根據城市規劃委員會的資料（<a href="https://www2.ozp.tpb.gov.hk/gist/apply/en_tc/A_HSK_253_TC.pdf">A/HSK/253</a>），兩個黃色框地帶，均是長實地產，和房屋協會的發展計劃，約供8,000人居住。</span></p>
-            </div>
-            <div style="height:100vh">
-                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2019年12月，仁愛堂開始為興建臨時過渡性房屋，斬掉白色框地帶的樹木。該項目<a href="https://www2.ozp.tpb.gov.hk/gist/apply/en_tc/A_HSK_323_TC.pdf">A/HSK/323</a>將供約400人居住。</span></p>
-            </div>
-            <div style="height:100vh">
-                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">洪福邨在2015年入伙後，有近12,000人口。附近一帶沒有供社工進駐的空間。洪福邨內有一青年空間、老年中心、幼稚園、小型街市（市場）。可是，這已經是附近僅有的設施了，而且附近住宅的居民，也會來到使用它們，以致供不應求。</span></p>
-            </div>
-            <div style="height:100vh">
-                <p style="width: 25vw; left: 72vw; font-size: 2.5vh;"><span style="background-color: white;">2020年11月，泛海集團開始在藍色框地帶動工，興建<a href="https://www2.ozp.tpb.gov.hk/gist/apply/en_tc/A_YL-PS_198_TC.pdf">A/YL-PS/198</a>住宅項目，將供大概2,200人居住。</span></p>
             </div>
         </div>
     </div>
@@ -245,7 +237,7 @@
             transform: translateX(-50%);">
             由於房屋問題嚴峻，港府多年來不斷興建公共屋邨，來迴避更難解決的根本問題--如高地價政策。可是，這樣「斬腳趾避沙蟲」（治標不治本）的政策，只會製造更多社區矛盾。政府引洪福邨建築設計為傲的其中一點是，它有近八成的綠化帶。諷刺的是，因房屋署承包給洪福邨管理公司的合約中，園藝維護的金額極其有限。從下方各圖可見，不少植物長年缺乏妥善照料，有的甚至已經枯死。
         </p>
-        <video id="video1" loop="true" autoplay="autoplay" muted="true"
+        <video id="video3" loop="true" autoplay="autoplay" muted="true"
             src="https://res.cloudinary.com/dcibk3fp2/video/upload/v1635953276/IMG_5362_jn2etk.mp4" style="
             display: block;
             position: relative;
@@ -257,9 +249,26 @@
             transform: translateX(-50%);"></video>
     </div>
 
-    <div id="section9" class="container-fluid text-center" style="
-    height: 350vh;
+    <div id="section9" class="container-fluid text-center"
+    style="
+    height:100vh;
+    background-image: url(https://live.staticflickr.com/5769/22588889918_bbf256ffcc_k_d.jpg);
+    background-size: cover;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;">
+    <p id="heading" style="
+        padding-top: 35vh;
+        text-shadow: 0vh 0vh 0.5vh black; 
+        color: white; 
+        font-family: Noto Serif TC;
+        font-size: 6vh;
+        font-weight: 600;">不同持份者的意見</p>
+    </div>
+
+    <div id="section10" class="container-fluid text-center" style="
+    height: 375vh;
     background-color: rgb(246, 246, 246);
+    padding-top: 15vh;
     font-size: 2.5vh;">
         <p style="
             max-width: 60%; 
