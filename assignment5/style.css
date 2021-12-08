@@ -1,0 +1,140 @@
+* {
+    position: relative;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#intro {
+    height:100vh;
+    background-image: url(https://cdn.hk01.com/di/media/images/687226/org/1b7240f66103eda0732260a19434d30d.jpg/XK5Gei-sow9Tm2j3IX59ZgiOIXeWDCcWg5KiL4OSoi8?v=w1920);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 68%;
+    background-repeat: no-repeat;
+    filter: grayscale(70%);
+}
+
+#heading {
+    padding-top: 35vh;
+    text-shadow: 0vh 0vh 0.5vh black; 
+    color: white; 
+    font-family: Noto Serif TC;
+    font-size: 6vh;
+    font-weight: 600;
+}
+
+#section1 {
+    height: 100vh;
+    background-color: rgb(246, 246, 246);
+    font-size: 2.5vh;
+}
+
+.des {
+    max-width: 65vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vh;
+    text-align: justify;
+}
+
+#section2 {
+    height: 800vh;
+    background-color: #000;
+    filter: grayscale(60%);
+}
+
+#earth {
+    height: 100vh;
+    z-index: 15;
+}
+
+.earth-img {
+    position: absolute;
+    /* need to remove spaces of each of these img */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 1;
+}
+
+#float {
+    z-index:20;
+    height: 700vh;
+}
+
+.floating-text {
+    top: -50vh;
+    height: 100vh;
+    width: 25vw;
+    left: 60vw;
+    font-size: 2.5vh;
+}
+
+span {
+    background-color: white;
+}
+
+#section3 {
+    height: 50vh;
+    background-color: rgb(246, 246, 246);
+}
+
+#section4 {
+    background-color: #222;
+}
+
+
+#left-col {
+    height: 100vh;
+    overflow: hidden;
+    border-right: 0.4vw solid rgb(246, 246, 246);
+}
+
+#bg-img {
+    position: absolute;
+    transform: translateX(0%);
+    transform: translateY(0%);
+    transition: all ease-in 1s;
+    left: 0vh;
+}
+
+#right-col {
+    height: 500vh;
+    padding: 10vh 10vh 10vh 10vh;
+    border-left: 0.4vw solid rgb(246, 246, 246);
+}
+
+.right-text {
+    font-size: 2.5vh;
+    color:  white;
+}
+
+.bg-loc {
+    padding-top: 70vh;
+    height: 100vh;
+}
+#section5 {
+    height: 100vh;
+    background-color: rgb(246, 246, 246);
+}
+
+#container {
+    max-width: 65vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Layer_1 {
+    width: 60vw;
+}
+
+#last {
+    margin-top: 5vh;
+    font-size: 2.5vh;
+    text-align: justify;
+}
