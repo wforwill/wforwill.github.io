@@ -108,6 +108,11 @@ span {
     border-left: 0.4vw solid rgb(246, 246, 246);
 }
 
+#right-col a {
+    color: white;
+    text-decoration: underline;
+}
+
 .right-text {
     font-size: 2.5vh;
     color:  white;
