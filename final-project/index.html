@@ -14,57 +14,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                var current_pos1 = $(window).scrollTop();
-                var new_width = current_pos1 / ($(document).height() - $(window).height()) * $(window)
-                    .width();
-                // name the variables
-                $("#progressbar1").css("width", new_width);
-                // select id progress bar, change its style--width into the var new_width
-            });
-        });
-
-        $(window).scroll(function () {
-            var scrolled = $(document).scrollTop();
-            var winh1 = $(window).height();
-            $(".opa").each(function () {
-                var opRange = $(this).parent().parent().height() / 6;
-                $(this).css({
-                    opacity: ($(this).data("seq") * opRange - scrolled + winh1 * 2) / opRange
-                });
-            });
-        });
-
-        $(function () {
-            var video2_pos = $('#section7').offset().top;
-            var video2_end = $('#section7').offset().top + $('#section7').height();
-            $(window).scroll(function () {
-                var current_pos3 = $(window).scrollTop();
-                if (current_pos3 > video2_pos && current_pos3 < video2_end) {
-                    $("#video2")[0].play();
-                } else {
-                    $("#video2")[0].pause();
-                }
-            });
-        });
-
-        $(function () {
-            var doch = $(document).height();
-            var winw = $(window).width();
-            var winh2 = $(window).height();
-            $(window).scroll(function () {
-                var current_pos3 = $(window).scrollTop();
-                var new_width = (current_pos3 - $("#section5").offset().top) / ($("#section5")
-                .height() - winh2) * winw;
-                $("#progressbar2").css("width", new_width);
-            });
-        });
-    </script>
-
     <style>
         * {
             position: relative;
@@ -132,20 +81,11 @@
                 src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-04_du0i8k.jpg" data-seq=1
                 style="z-index:15; position: absolute; width: 100vw; height: 100vh; object-fit: cover; opacity: 1;">
             <img class="opa img-fluid earth-img"
-                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-05_xkbfpg.jpg" data-seq=2
-                style="z-index:14; position: absolute; width: 100vw; height: 100vh; object-fit: cover; opacity: 1;">
-            <img class="opa img-fluid earth-img"
-                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-06_uri8pk.jpg" data-seq=3
+                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-06_uri8pk.jpg" data-seq=2
                 style="z-index:13; position: absolute; width: 100vw; height: 100vh; object-fit: cover; opacity: 1;">
             <img class="opa img-fluid earth-img"
-                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-07_bk9rus.jpg" data-seq=4
-                style="z-index:12; position: absolute; width: 100vw; height: 100vh; object-fit: cover; opacity: 1;">
-            <img class="opa img-fluid earth-img"
-                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-08_bwzchx.jpg" data-seq=5
+                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-08_bwzchx.jpg" data-seq=3
                 style="z-index:11; position: absolute; width: 100vw; height: 100vh; object-fit: cover; opacity: 1;">
-            <img class="opa img-fluid earth-img"
-                src="https://res.cloudinary.com/dcibk3fp2/image/upload/v1639316333/Artboard_15_5-09_lfy1io.jpg" data-seq=6
-                style="z-index:10; position: absolute; width: 100vw; height: 100vh; object-fit: cover; opacity: 1;">
         </div>
         <div id="float" style="z-index:20;">
             <div>
@@ -154,19 +94,11 @@
             </div>
             <div>
                 <p class="floating-text" style="top: -50vh; height: 100vh; width: 25vw; left: 60vw; font-size: 2.5vh;">
-                    <span style="background-color: white;">這是支持建時廠居民聚落不多的一般説法。桃煉厰的建立，被廣泛認爲沒有土地規劃的爭議。</span></p>
+                    <span style="background-color: white;">這是支持建時廠居民聚落不多的一般説法。桃煉厰的建立，被廣泛認爲沒有土地規劃的爭議。<br><br>從內政部國土測繪中心，2015年至2020年歷史衛星圖可見，近年桃煉廠的建築密度十分高，而且數量維持穩定。</span></p>
             </div>
             <div>
-                <p class="floating-text" style="top: -50vh; height: 100vh; width: 25vw; left: 60vw; font-size: 2.5vh;">
-                    <span style="background-color: white;">從內政部國土測繪中心，2015年至2020年歷史衛星圖可見，近年桃煉廠的建築密度十分高，而且數量維持穩定。</span></p>
-            </div>
-            <div>
-                <p class="floating-text" style="top: -50vh; height: 100vh; width: 25vw; left: 60vw; font-size: 2.5vh;">
+                <p class="floating-text" style="top: -50vh; height: 50vh; width: 25vw; left: 60vw; font-size: 2.5vh;">
                     <span style="background-color: white;">然而，從人口統計數字來看，民國67年，桃煉廠剛營運初期，附近汴洲里人口為3,406人。汴洲里人口到110年10月底成長至5328人，也只是增加了不足一倍而已。</span></p>
-            </div>
-            <div>
-                <p class="floating-text" style="top: -50vh; height: 30vh; width: 25vw; left: 60vw; font-size: 2.5vh;">
-                    <span style="background-color: white;">如果說現在有煉油廠與居民過近疑慮，那在1978年時，附近也已有不少人居住，多年來人口並未顯著增加。</span></p>
             </div>
         </div>
     </div>
@@ -399,6 +331,57 @@
             <br><br>還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好還沒寫好</p>
         <iframe style="width: 56%; height:15%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
     </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var current_pos1 = $(window).scrollTop();
+                var new_width = current_pos1 / ($(document).height() - $(window).height()) * $(window)
+                    .width();
+                // name the variables
+                $("#progressbar1").css("width", new_width);
+                // select id progress bar, change its style--width into the var new_width
+            });
+        });
+
+        $(window).scroll(function () {
+            var scrolled = $(document).scrollTop();
+            var winh1 = $(window).height();
+            $(".opa").each(function () {
+                var opRange = $(this).parent().parent().height() / 3;
+                $(this).css({
+                    opacity: ($(this).data("seq") * opRange - scrolled + winh1 * 2) / opRange
+                });
+            });
+        });
+
+        $(function () {
+            var video2_pos = $('#section7').offset().top;
+            var video2_end = $('#section7').offset().top + $('#section7').height();
+            $(window).scroll(function () {
+                var current_pos3 = $(window).scrollTop();
+                if (current_pos3 > video2_pos && current_pos3 < video2_end) {
+                    $("#video2")[0].play();
+                } else {
+                    $("#video2")[0].pause();
+                }
+            });
+        });
+
+        $(function () {
+            var doch = $(document).height();
+            var winw = $(window).width();
+            var winh2 = $(window).height();
+            $(window).scroll(function () {
+                var current_pos3 = $(window).scrollTop();
+                var new_width = (current_pos3 - $("#section5").offset().top) / ($("#section5")
+                .height() - winh2) * winw;
+                $("#progressbar2").css("width", new_width);
+            });
+        });
+    </script>
 
 </body>
 
