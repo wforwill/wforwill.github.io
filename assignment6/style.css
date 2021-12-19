@@ -58,6 +58,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: #999;
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
