@@ -21,12 +21,13 @@
 }
 
 .bottom {
-    background-color: rgb(246, 246, 246);
-    height: 20vh;
-    padding-top: 5vh;
+    background-color: #222;
+    height: 15vh;
+    padding-top: 4vh;
     font-family: Noto Serif TC;
-    font-size: 6vh;
-    font-weight: 400;
+    font-size: 4vh;
+    font-weight: 500;
+    color: white;
 }
 
 #div1 {
