@@ -1,0 +1,86 @@
+* {
+    position: relative;
+    margin: 0;
+}
+
+#intro {
+    height:100vh;
+    background-image: url(https://static02-proxy.hket.com/res/v3/image/content/3025000/3025783/mdf63059_1024.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(30%);
+}
+
+#heading {
+    padding-top: 35vh;
+    text-shadow: 0vh 0vh 1vh black; 
+    color: white; 
+    font-family: Noto Serif TC;
+    font-size: 6vh;
+    font-weight: 600;
+}
+
+.bottom {
+    background-color: rgb(246, 246, 246);
+    height: 20vh;
+    padding-top: 5vh;
+    font-family: Noto Serif TC;
+    font-size: 6vh;
+    font-weight: 400;
+}
+
+#div1 {
+    background-image: url("https://res.cloudinary.com/dcibk3fp2/image/upload/e_grayscale/v1640421527/velo1_t3bry1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 125%;
+    height: 200vh;
+    overflow: hidden;
+}
+
+#div2 {
+    background-image: url("https://res.cloudinary.com/dcibk3fp2/image/upload/e_grayscale/v1640421528/velo2_lbdlsq.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 200vh;
+    overflow: hidden;
+}
+
+#lws1 {
+    animation: climb 2s ease-in infinite;
+    transform: rotate();
+}
+
+@keyframes climb {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(2deg); }
+    20% { transform: rotate(-2deg); }
+    30% { transform: rotate(3deg); }
+    40% { transform: rotate(-3deg); }
+    50% { transform: rotate(4deg); }
+    60% { transform: rotate(-4deg); }
+    70% { transform: rotate(3deg); }
+    80% { transform: rotate(-3deg); }
+    90% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+}
+
+#lws2 {
+    animation: rush 2s ease-in infinite;
+    transform: rotate();
+}
+
+@keyframes rush {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(2deg); }
+    20% { transform: rotate(-2deg); }
+    30% { transform: rotate(3deg); }
+    40% { transform: rotate(-3deg); }
+    50% { transform: rotate(4deg); }
+    60% { transform: rotate(-4deg); }
+    70% { transform: rotate(3deg); }
+    80% { transform: rotate(-3deg); }
+    90% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+}
