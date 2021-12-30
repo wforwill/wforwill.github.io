@@ -30,22 +30,27 @@
     color: white;
 }
 
+.sticky-top {
+    z-index: -99;
+}
+
+.sticky-bg {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+#bg1 {
+
+}
+
 #div1 {
-    background-image: url("https://res.cloudinary.com/dcibk3fp2/image/upload/e_grayscale/v1640421527/velo1_t3bry1.webp");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 125%;
     height: 200vh;
-    overflow: hidden;
 }
 
 #div2 {
-    background-image: url("https://res.cloudinary.com/dcibk3fp2/image/upload/e_grayscale/v1640421528/velo2_lbdlsq.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
     height: 200vh;
-    overflow: hidden;
 }
 
 #lws1 {
