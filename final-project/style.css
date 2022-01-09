@@ -367,13 +367,9 @@
     }
 }
 
-#subtitle3 {
-    margin-top: 15vh;
-}
-
 /*  */
 #improvements {
-    height: 190vh;
+    height: 200vh;
     background-color: #141414;
     font-size: 2.8vh;
     color: rgb(246, 246, 246);
@@ -412,7 +408,7 @@
 
 /*  */
 #choices {
-    height: 600vh;
+    height: 620vh;
     width: 100vw;
     background-color: #141414;
     font-size: 2.8vh;
@@ -430,10 +426,38 @@
     border-right: 0.6vh solid rgb(246, 246, 246);
 }
 
+.right-col {
+    height: 150vh;
+    padding: 10vh 10vh 10vh 10vh;
+    border-left: 0.6vh solid rgb(246, 246, 246);
+}
+
+.left {
+    left: 4.5vw;
+    top: 20vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .left {
+        left: 0.5vw;
+    }
+}
+
+.right {
+    left: 3vw;
+    top: 20vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .right {
+        left: 0.5vw;
+    }
+}
+
 .options {
     background-color: rgb(246, 246, 246);
-    margin: 25vh 5vh 5vh 5vh;
     padding: 3vh 3vh 3vh 3vh;
+    width: 40vw;
 }
 
 @media screen and (max-width: 1200px) {
@@ -443,15 +467,56 @@
     }
 }
 
-
-.right-col {
-    height: 150vh;
-    padding: 10vh 10vh 10vh 10vh;
-    border-left: 0.6vh solid rgb(246, 246, 246);
+.option1 {
+    font-size: 3.4vh;
+    margin-top: 30vh;
+    margin-bottom: -20vh;
+    left: 4.5vw;
+    background-color: rgb(196, 196, 196);
+    font-weight: 600;
+    color: black;
 }
 
-#des3 {
-    background-color: rgb(246, 246, 246);
-    margin: 0vh 5vh 5vh 5vh;
-    padding: 3vh 3vh 3vh 3vh;
+@media screen and (max-width: 1200px) {
+    .option1 {
+        font-size: 2.4vh;
+        margin-bottom: -25vh;
+        left: 0.5vw;
+    }
+}
+
+.option2 {
+    font-size: 3.4vh;
+    margin-top: 30vh;
+    margin-bottom: -20vh;
+    left: 3vw;
+    background-color: rgb(196, 196, 196);
+    font-weight: 600;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .option2 {
+        font-size: 2.4vh;
+        margin-bottom: -25vh;
+        left: 0.5vw;
+    }
+}
+
+.option3 {
+    font-size: 3.4vh;
+    margin-top: 30vh;
+    margin-bottom: -20vh;
+    left: 4.5vw;
+    background-color: rgb(196, 196, 196);
+    font-weight: 600;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .option3 {
+        font-size: 2.4vh;
+        margin-bottom: -25vh;
+        left: 0.5vw;
+    }
 }
