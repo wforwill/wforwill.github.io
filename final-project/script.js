@@ -26,7 +26,7 @@ $(function () {
         $(".news").each(function () {
             var opRange = $(window).height();
             $(this).css({
-                opacity: ($(this).data("seq") * opRange - $(document).scrollTop() + $("#too-many-news").offset().top + $(window).height()) / opRange
+                opacity: ($(this).data("seq") * opRange - $(document).scrollTop() + $("#too-many-news").offset().top + $(window).height()*0.7) / opRange
             });
         });
     });
