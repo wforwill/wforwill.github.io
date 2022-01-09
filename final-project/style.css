@@ -55,7 +55,7 @@
 #credits {
     font-size: 2vh;
     font-family: 'Noto Serif TC', sans-serif;
-    border-left: 1vh solid rgb(246, 246, 246);
+    border-left: 0.7vh solid rgb(246, 246, 246);
     padding: 0vh 0vh 0vh 2vh;
     margin-left: 3.5vh;
 }
@@ -93,7 +93,7 @@
     width: 100vw;
     overflow: hidden;
     height: 100vh;
-    background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1641374168/%E5%B0%8D%E6%AF%94%E5%9C%96%E4%B8%89%E7%A8%BF-03-output_thd2dm.jpg);
+    background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1641734265/1978_2006%E9%84%B0%E8%BF%91%E5%9C%B0%E5%8D%80%E5%B0%8D%E6%AF%94%E5%9C%96%E4%B8%89%E7%A8%BF-03-min_dhnqf5.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@
     height: 100vh;
     width: 0px;
     left: 0px;
-    background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1641374168/%E5%B0%8D%E6%AF%94%E5%9C%96%E4%B8%89%E7%A8%BF-01-output_bxbc2f.jpg);
+    background-image: url(https://res.cloudinary.com/dcibk3fp2/image/upload/v1641734264/1978_2006%E9%84%B0%E8%BF%91%E5%9C%B0%E5%8D%80%E5%B0%8D%E6%AF%94%E5%9C%96%E4%B8%89%E7%A8%BF-01-min_ytm1sa.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,8 +118,8 @@
     color: #141414;
     z-index: 100;
     top: -100vh;
-    margin-top: 80vh;
-    left: 50vw;
+    margin-top: 78vh;
+    left: 51vw;
     width: 45vw;
     text-align: justify;
     box-shadow: 0.2vh 0.2vh 1vh #141414;
@@ -142,18 +142,20 @@
 #doubt2 {
     height: 400vh;
     background-color: #141414;
+    font-size: 2.8vh
+    ;
+}
+
+@media screen and (max-width: 1200px) {
+    #doubt2 {
+        font-size: 2vh;
+    }
 }
 
 #wrapper3 {
     z-index: 1;
     height: 100vh;
-    font-size: 2.8vh;
-}
-
-@media screen and (max-width: 1200px) {
-    #wrapper3 {
-        font-size: 2vh;
-    }
+    filter: grayscale(90%);
 }
 
 .districts {
@@ -170,8 +172,8 @@
     background-color: rgb(246, 246, 246);
     z-index: 100;
     top: -100vh;
-    margin-top: 100vh;
-    left: 50vw;
+    margin-top: 94vh;
+    left: 51vw;
     width: 45vw;
     box-shadow: 0.2vh 0.2vh 1vh #141414;
 }
@@ -210,7 +212,7 @@
 .title {
     top: 45%;
     text-align: center;
-    text-shadow: 0vh 0vh 0.5vh #141414;
+    text-shadow: 0vh 0vh 4vh #141414;
     color: rgb(246, 246, 246);
     font-size: 6vh;
     font-weight: 600;
@@ -245,6 +247,10 @@
 
 #wrapper7 {
     height: 100vh;
+}
+
+#big-pic2 {
+    object-position: 50% 70%;
 }
 
 /*  */
@@ -332,15 +338,33 @@
 }
 
 /*  */
-#problems {
+#drone {
+    height: 300vh;
+}
+
+#wrapper0 {
     height: 100vh;
+}
+
+#video2 {
+    z-index: -20;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 100%;
+    position: absolute;
+}
+
+/*  */
+#problems {
+    height: 190vh;
     background-color: #141414;
     color: rgb(246, 246, 246);
+    margin-bottom: -20vh;
 }
 
 .wrapper11 {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25vh;
     width: 60%;
     margin: 0 auto;
     font-size: 2.8vh;
@@ -367,6 +391,21 @@
     }
 }
 
+#board {
+    width: 60vw;
+    padding: 3vh 3vh 3vh 3vh;
+}
+
+@media screen and (max-width: 1200px) {
+    #board {
+        width: 80vw;
+    }
+}
+
+#des0 {
+    margin-top: -5vh;
+}
+
 /*  */
 #improvements {
     height: 200vh;
@@ -383,7 +422,7 @@
 
 /*  */
 #residents {
-    height: 100vh;
+    height: 105vh;
     background-color: #141414;
     font-size: 2.8vh;
     color: rgb(246, 246, 246);
@@ -399,6 +438,7 @@
 /*  */
 #breath3 {
     height: 120vh;
+    filter: grayscale(60%);
 }
 
 #wrapper12 {
@@ -519,4 +559,31 @@
         margin-bottom: -25vh;
         left: 0.5vw;
     }
+}
+
+/*  */
+#thanks {
+    height: 70vh;
+    background-color: #141414;
+}
+
+#wrapper13 {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26%;
+    margin: 0 auto;
+    font-size: 2vh;
+    color: rgb(246, 246, 246);
+}
+
+@media screen and (max-width: 1200px) {
+    #wrapper13 {
+        font-size: 1.7vh;
+        width: 50%
+    }
+}
+
+#who {
+    border-left: 0.7vh solid rgb(246, 246, 246);
+    padding: 0vh 0vh 0vh 2vh;
 }
