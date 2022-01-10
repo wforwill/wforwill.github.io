@@ -169,7 +169,13 @@
 #wrapper3 {
     z-index: 1;
     height: 100vh;
-    filter: grayscale(90%);
+}
+
+#location {
+    z-index: 20;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 .districts {
@@ -179,6 +185,7 @@
     height: 100vh;
     opacity: 1;
     object-fit: cover;
+    filter: grayscale(90%);
 }
 
 .floating-text2 {
@@ -217,10 +224,16 @@
 /*  */
 #breath1 {
     height: 120vh;
+    background-color: #141414;
 }
 
 #wrapper5 {
     height: 100vh;
+}
+
+#big-pic1 {
+    object-position: center;
+    object-fit: contain;
 }
 
 .title {
@@ -257,14 +270,18 @@
 /*  */
 #breath2 {
     height: 120vh;
+    background-color: #141414;
 }
 
 #wrapper7 {
     height: 100vh;
+    overflow: hidden;
 }
 
 #big-pic2 {
-    object-position: 50% 35%;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(110%);
 }
 
 /*  */
@@ -444,7 +461,7 @@
 
 #big-pic3 {
     object-position: 50% 0%;
-    transform: scale(150%);
+    transform: scale(160%);
 }
 
 /*  */
