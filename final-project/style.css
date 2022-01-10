@@ -32,7 +32,7 @@
 
 /*  */
 #intro {
-    height: 120vh;
+    height: 160vh;
     background-color: #141414;
 }
 
@@ -110,6 +110,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    border-right: 2vh solid white;
 }
 
 .floating-text1 {
@@ -128,8 +129,14 @@
 
 /*  */
 #stat {
-    height: 50vh;
+    height: 80vh;
     background-color: #141414;
+}
+
+@media screen and (max-width: 1200px) {
+    #stat {
+        height: 40vh;
+    }
 }
 
 #popu {
@@ -180,7 +187,7 @@
 
 /*  */
 #brief {
-    height: 100vh;
+    height: 110vh;
     background-color: #141414;
 }
 
@@ -331,7 +338,7 @@
     border-left: 1vh solid rgb(246, 246, 246);
     color: rgb(246, 246, 246);
     top: -80vh;
-    margin-top: 80vh;
+    margin-top: 101vh;
     width: 30vw;
     left: 60vw;
     padding-left: 2vh;
@@ -357,13 +364,18 @@
 
 /*  */
 #problems {
-    height: 190vh;
+    height: 250vh;
     background-color: #141414;
     color: rgb(246, 246, 246);
-    margin-bottom: -20vh;
 }
 
-.wrapper11 {
+@media screen and (max-width: 1200px) {
+    #problems {
+        height: 205vh;
+    }
+}
+
+.wrappera {
     top: 25vh;
     width: 60%;
     margin: 0 auto;
@@ -371,7 +383,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .wrapper11 {
+    .wrappera {
         font-size: 2vh;
         width: 80%;
     }
@@ -393,7 +405,7 @@
 
 #board {
     width: 60vw;
-    padding: 3vh 3vh 3vh 3vh;
+    padding: 0vh 3vh 3vh 3vh;
 }
 
 @media screen and (max-width: 1200px) {
@@ -402,13 +414,10 @@
     }
 }
 
-#des0 {
-    margin-top: -5vh;
-}
 
 /*  */
 #improvements {
-    height: 200vh;
+    height: 115vh;
     background-color: #141414;
     font-size: 2.8vh;
     color: rgb(246, 246, 246);
@@ -416,6 +425,7 @@
 
 @media screen and (max-width: 1200px) {
     #improvements {
+        height: 121vh;
         font-size: 1.7vh;
     }
 }
@@ -429,7 +439,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #improvements {
+    #residents {
+        height: 90vh;
         font-size: 1.7vh;
     }
 }
@@ -448,7 +459,7 @@
 
 /*  */
 #choices {
-    height: 620vh;
+    height: 400vh;
     width: 100vw;
     background-color: #141414;
     font-size: 2.8vh;
@@ -462,14 +473,42 @@
 }
 
 .left-col {
-    height: 150vh;
+    height: 135vh;
     border-right: 0.6vh solid rgb(246, 246, 246);
 }
 
+@media screen and (max-width: 1200px) {
+    .left-col {
+        height: 125vh;
+    }
+}
+
 .right-col {
-    height: 150vh;
+    height: 135vh;
     padding: 10vh 10vh 10vh 10vh;
     border-left: 0.6vh solid rgb(246, 246, 246);
+}
+
+@media screen and (max-width: 1200px) {
+    .right-col {
+        height: 125vh;
+    }
+}
+
+.left-col2 {
+    height: 85vh;
+}
+
+.right-col2 {
+    height: 85vh;
+}
+
+.left-col3 {
+    height: 195vh;
+}
+
+.right-col3 {
+    height: 195vh;
 }
 
 .left {
