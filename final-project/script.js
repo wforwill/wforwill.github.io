@@ -23,6 +23,14 @@ $(function () {
     });
 
     $(window).scroll(function () {
+        if ($(window).scrollTop() > $("#drone").offset().top && $(window).scrollTop() < $("#drone").offset().top + $("#drone").height()) {
+            $("#video2")[0].play();
+        } else {
+            $("#video2")[0].pause();
+        }
+    });
+
+    $(window).scroll(function () {
         $(".news").each(function () {
             var opRange = $(window).height();
             $(this).css({
