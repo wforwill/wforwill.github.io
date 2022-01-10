@@ -264,7 +264,7 @@
 }
 
 #big-pic2 {
-    object-position: 50% 70%;
+    object-position: 50% 35%;
 }
 
 /*  */
@@ -371,32 +371,34 @@
 
 /*  */
 #problems {
-    height: 245vh;
+    height: 480vh;
     background-color: #141414;
     color: rgb(246, 246, 246);
 }
 
 @media screen and (max-width: 1200px) {
     #problems {
-        height: 205vh;
+        height: 360vh;
     }
 }
 
-.wrapper12 {
-    top: 25vh;
+#wrapper12 {
+    top: 50%;
+    transform: translateY(-50%);
     width: 60%;
     margin: 0 auto;
     font-size: 2.8vh;
 }
 
 @media screen and (max-width: 1200px) {
-    .wrapper12 {
-        font-size: 2vh;
+    #wrapper12 {
+        font-size: 1.7vh;
         width: 80%;
     }
 }
 
 .subtitle {
+    margin-top: ;
     font-size: 3.4vh;
     font-weight: 900;
     color: rgb(246, 246, 246);
@@ -408,6 +410,10 @@
     .subtitle {
         font-size: 2.4vh;
     }
+}
+
+.subtitle0 {
+    margin-top: 20vh;
 }
 
 #board {
@@ -424,38 +430,6 @@
 #des0 {
     margin-top: -5vh;
 }
-
-
-/*  */
-#improvements {
-    height: 115vh;
-    background-color: #141414;
-    font-size: 2.8vh;
-    color: rgb(246, 246, 246);
-}
-
-@media screen and (max-width: 1200px) {
-    #improvements {
-        height: 121vh;
-        font-size: 1.7vh;
-    }
-}
-
-/*  */
-#residents {
-    height: 105vh;
-    background-color: #141414;
-    font-size: 2.8vh;
-    color: rgb(246, 246, 246);
-}
-
-@media screen and (max-width: 1200px) {
-    #residents {
-        height: 90vh;
-        font-size: 1.7vh;
-    }
-}
-
 
 /*  */
 #breath3 {
