@@ -356,7 +356,7 @@
     height: 300vh;
 }
 
-#wrapper0 {
+#wrapper11 {
     height: 100vh;
 }
 
@@ -371,7 +371,7 @@
 
 /*  */
 #problems {
-    height: 250vh;
+    height: 245vh;
     background-color: #141414;
     color: rgb(246, 246, 246);
 }
@@ -382,7 +382,7 @@
     }
 }
 
-.wrappera {
+.wrapper12 {
     top: 25vh;
     width: 60%;
     margin: 0 auto;
@@ -390,7 +390,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .wrappera {
+    .wrapper12 {
         font-size: 2vh;
         width: 80%;
     }
@@ -419,6 +419,10 @@
     #board {
         width: 80vw;
     }
+}
+
+#des0 {
+    margin-top: -5vh;
 }
 
 
@@ -459,7 +463,7 @@
     filter: grayscale(60%);
 }
 
-#wrapper12 {
+#wrapper13 {
     height: 100vh;
 }
 
@@ -613,7 +617,7 @@
     background-color: #141414;
 }
 
-#wrapper13 {
+#wrapper14 {
     top: 50%;
     transform: translateY(-50%);
     width: 26%;
@@ -623,7 +627,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #wrapper13 {
+    #wrapper14 {
         font-size: 1.7vh;
         width: 50%
     }
