@@ -23,7 +23,7 @@
 .heading {
     top: 30%;
     text-align: center;
-    text-shadow: 0vh 0vh 0.5vh #141414;
+    text-shadow: 0vh 0vh 1vh black;
     color: rgb(246, 246, 246);
     font-family: Noto Serif TC;
     font-size: 6vh;
@@ -465,8 +465,13 @@
 
 #wrapper13 {
     height: 100vh;
+    overflow: hidden;
 }
 
+#big-pic3 {
+    object-position: 50% 0%;
+    transform: scale(150%);
+}
 
 /*  */
 #choices {
