@@ -293,7 +293,7 @@
 
 @media screen and (max-width: 1200px) {
     #gov {
-        height: 165vh;
+        height: 170vh;
     }
 }
 
@@ -401,7 +401,7 @@
 
 @media screen and (max-width: 1200px) {
     #problems {
-        height: 470vh;
+        height: 490vh;
     }
 }
 
@@ -481,7 +481,6 @@
 
 @media screen and (max-width: 1200px) {
     #choices {
-        height: 380vh;
         font-size: 1.7vh;
     }
 }
