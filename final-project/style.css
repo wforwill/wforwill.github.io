@@ -78,13 +78,14 @@
 
 /*  */
 #doubt1 {
-    height: 360vh;
+    height: 320vh;
     background-color: #141414;
     font-size: 2.8vh;
 }
 
 @media screen and (max-width: 1200px) {
     #doubt1 {
+        height: 335vh;
         font-size: 2vh;
     }
 }
@@ -118,8 +119,8 @@
     background-color: rgb(246, 246, 246);
     color: #141414;
     z-index: 100;
-    top: -100vh;
-    margin-top: 78vh;
+    top: -60vh;
+    margin-top: 90vh;
     left: 51vw;
     width: 45vw;
     text-align: justify;
@@ -176,6 +177,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
+    object-fit: cover;
 }
 
 .districts {
@@ -201,7 +203,7 @@
 
 /*  */
 #brief {
-    height: 110vh;
+    height: 130vh;
     background-color: #141414;
 }
 
@@ -286,9 +288,15 @@
 
 /*  */
 #gov {
-    height: 140vh;
+    height: 150vh;
     background-color: #141414;
     color: rgb(246, 246, 246);
+}
+
+@media screen and (max-width: 1200px) {
+    #gov {
+        height: 165vh;
+    }
 }
 
 #wrapper8 {
@@ -361,8 +369,8 @@
 .floating-text3 {
     border-left: 1vh solid rgb(246, 246, 246);
     color: rgb(246, 246, 246);
-    top: -80vh;
-    margin-top: 101vh;
+    top: -60vh;
+    margin-top: 77vh;
     width: 30vw;
     left: 60vw;
     padding-left: 2vh;
@@ -395,7 +403,7 @@
 
 @media screen and (max-width: 1200px) {
     #problems {
-        height: 360vh;
+        height: 470vh;
     }
 }
 
@@ -475,6 +483,7 @@
 
 @media screen and (max-width: 1200px) {
     #choices {
+        height: 380vh;
         font-size: 1.7vh;
     }
 }
@@ -511,11 +520,23 @@
 }
 
 .left-col3 {
-    height: 195vh;
+    height: 165vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .left-col3 {
+        height: 140vh;
+    }
 }
 
 .right-col3 {
-    height: 195vh;
+    height: 165vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .right-col3 {
+        height: 140vh;
+    }
 }
 
 .left {
@@ -573,7 +594,7 @@
 
 .option2 {
     font-size: 3.4vh;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-bottom: -20vh;
     left: 3vw;
     background-color: rgb(196, 196, 196);
@@ -591,7 +612,7 @@
 
 .option3 {
     font-size: 3.4vh;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-bottom: -20vh;
     left: 4.5vw;
     background-color: rgb(196, 196, 196);
@@ -602,10 +623,40 @@
 @media screen and (max-width: 1200px) {
     .option3 {
         font-size: 2.4vh;
+        margin-top: 8vh;
         margin-bottom: -25vh;
         left: 0.5vw;
     }
 }
+
+/*  */
+#last {
+    height: 100vh;
+    background-color: #141414;
+}
+
+@media screen and (max-width: 1200px) {
+    #last {
+        height: 50vh;
+    }
+}
+
+#wrapper12 {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.8vh;
+    color: rgb(246, 246, 246);
+}
+
+@media screen and (max-width: 1200px) {
+    #wrapper12 {
+        font-size: 2.2vh;
+        width: 80%;
+    }
+}
+
 
 /*  */
 #thanks {
@@ -613,7 +664,7 @@
     background-color: #141414;
 }
 
-#wrapper14 {
+#wrapper15 {
     top: 50%;
     transform: translateY(-50%);
     width: 26%;
@@ -623,7 +674,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #wrapper14 {
+    #wrapper15 {
         font-size: 1.7vh;
         width: 50%
     }
