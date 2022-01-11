@@ -376,6 +376,12 @@
     padding-left: 2vh;
 }
 
+@media screen and (max-width: 1200px) {
+    .floating-text3 {
+        margin-top: 67vh;
+    }
+}
+
 /*  */
 #drone {
     height: 300vh;
