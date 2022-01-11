@@ -85,7 +85,6 @@
 
 @media screen and (max-width: 1200px) {
     #doubt1 {
-        height: 335vh;
         font-size: 2vh;
     }
 }
@@ -119,8 +118,8 @@
     background-color: rgb(246, 246, 246);
     color: #141414;
     z-index: 100;
-    top: -60vh;
-    margin-top: 90vh;
+    top: -140vh;
+    margin-top: 80vh;
     left: 51vw;
     width: 45vw;
     text-align: justify;
@@ -195,7 +194,7 @@
     background-color: rgb(246, 246, 246);
     z-index: 100;
     top: -100vh;
-    margin-top: 94vh;
+    margin-top: 93vh;
     left: 51vw;
     width: 45vw;
     box-shadow: 0.2vh 0.2vh 1vh #141414;
@@ -369,17 +368,11 @@
 .floating-text3 {
     border-left: 1vh solid rgb(246, 246, 246);
     color: rgb(246, 246, 246);
-    top: -60vh;
-    margin-top: 77vh;
+    top: -77vh;
+    margin-top: 90vh;
     width: 30vw;
     left: 60vw;
     padding-left: 2vh;
-}
-
-@media screen and (max-width: 1200px) {
-    .floating-text3 {
-        margin-top: 67vh;
-    }
 }
 
 /*  */
@@ -439,7 +432,7 @@
 
 @media screen and (max-width: 1200px) {
     .subtitle {
-        font-size: 2.4vh;
+        font-size: 2.8vh;
     }
 }
 
