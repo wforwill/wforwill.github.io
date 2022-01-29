@@ -29,6 +29,7 @@
 }
 
 #guide {
+    display: flex;
     position: absolute;
     bottom: 3.5vh;
     text-align: center;
@@ -566,6 +567,10 @@
     }
 }
 
+#wrapper14:hover .move{
+    animation-play-state: paused;
+}
+
 .typewriter {
     margin-bottom: -10vh;
 }
@@ -582,7 +587,7 @@
     animation: 
         b .7s infinite steps(1),   
         t calc(var(--n)*.1s) steps(var(--n)) infinite;
-  }
+}
   
 @keyframes t{
     from {background-size:0 200%}
