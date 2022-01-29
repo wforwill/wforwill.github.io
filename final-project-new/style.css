@@ -84,13 +84,6 @@
 }
 
 /* -------------------------------------------------- */
-.navbar {
-    background-color: #141414;
-    color: rgb(246, 246, 246); !important
-}
-
-
-/* -------------------------------------------------- */
 #intro {
     background-color: #141414;
     display: flex;
@@ -567,28 +560,28 @@
     }
 }
 
-#wrapper14:hover .move{
+/* #wrapper14:hover .move{
     animation-play-state: paused;
-}
+} */
 
 .typewriter {
     margin-bottom: -10vh;
 }
 
 .move {
-    color:#0000;
+    color: #0000;
     background:
         linear-gradient(-90deg,white 5px,#0000 0) 10px 0,
         linear-gradient(white 0 0) 0 0;
-    background-size:calc(var(--n)*1ch) 200%;
-    -webkit-background-clip:padding-box,text;
-    background-clip:padding-box,text;
-    background-repeat:no-repeat;
+    background-size: calc(var(--n)*1ch) 200%;
+    -webkit-background-clip: padding-box,text;
+    background-clip: padding-box,text;
+    background-repeat: no-repeat;
     animation: 
         b .7s infinite steps(1),   
-        t calc(var(--n)*.1s) steps(var(--n)) infinite;
+        t calc(var(--n)*.1s) steps(var(--n)) forwards;
 }
-  
+
 @keyframes t{
     from {background-size:0 200%}
 }

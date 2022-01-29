@@ -1,14 +1,14 @@
 var s = skrollr.init();
 
-$(function () {
+$(function() {
 
-    $(window).scroll(function () {
+    $(window).scroll(function(){
         var new_width = ($(window).scrollTop() - $("#doubt1").offset().top) / ($("#doubt1").height() - $(window).height()) * $(window).width();
         $("#fakeprogressbar").css("width", new_width);
     });
 
-    $(window).scroll(function () {
-        $(".districts").each(function () {
+    $(window).scroll(function(){
+        $(".districts").each(function(){
             var opRange = $(window).height();
             $(this).css({
                 opacity: ($(this).data("seq") * opRange - $(document).scrollTop() + $("#doubt2").offset().top) / opRange
@@ -16,7 +16,7 @@ $(function () {
         });
     });
 
-    $(window).scroll(function () {
+    $(window).scroll(function(){
         if ($(window).scrollTop() > $("#bloom").offset().top && $(window).scrollTop() < $("#bloom").offset().top + $("#bloom").height()) {
             $("#video")[0].play();
         } else {
@@ -24,7 +24,7 @@ $(function () {
         }
     });
 
-    $(window).scroll(function () {
+    $(window).scroll(function(){
         if ($(window).scrollTop() > $("#drone").offset().top && $(window).scrollTop() < $("#drone").offset().top + $("#drone").height()) {
             $("#video2")[0].play();
         } else {
@@ -32,13 +32,23 @@ $(function () {
         }
     });
 
-    $(window).scroll(function () {
-        $(".news").each(function () {
+    $(window).scroll(function(){
+        $(".news").each(function(){
             var opRange = $(window).height();
             $(this).css({
                 opacity: ($(this).data("seq") * opRange - $(document).scrollTop() + $("#too-many-news").offset().top + $(window).height()*0.7) / opRange
             });
         });
     });
+
+    $(window).scroll(function(){
+        if ($(document).scrollTop() > $("#last").offset().top - $(window).height() * 0.2){
+            $(".type").addClass("move");
+        } else {
+            $(".type").removeClass("move");
+        }
+    });
+
+
 
 });
