@@ -42,15 +42,15 @@
 
 @keyframes guide {
     0% {     
-        text-shadow: 0vh 0vh 1vh white;
+        text-shadow: 0vh 0vh 1vh black;
         bottom: 3.5vh
     }
     50% {
-        text-shadow: 0vh 0vh 1vh black;
+        text-shadow: 0vh 0vh 1vh white;
         bottom: 2.5vh
     }
     100% {     
-        text-shadow: 0vh 0vh 1vh white;
+        text-shadow: 0vh 0vh 1vh black;
         bottom: 3.5vh
     }
 }
@@ -69,15 +69,15 @@
 
 @keyframes symbol {
     0% {     
-        text-shadow: 0vh 0vh 1vh white;
+        text-shadow: 0vh 0vh 1vh black;
         bottom: 1vh
     }
     50% {
-        text-shadow: 0vh 0vh 1vh black;
+        text-shadow: 0vh 0vh 1vh white;
         bottom: 0vh
     }
     100% {     
-        text-shadow: 0vh 0vh 1vh white;
+        text-shadow: 0vh 0vh 1vh black;
         bottom: 1vh
     }
 }
